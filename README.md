@@ -65,3 +65,27 @@ brew install --cask zenpost-studio
 Das PKG wird aus den offiziellen
 [ZenPost-Studio-Releases](https://github.com/THEORIGINALBITTER/zenpost-studio/releases)
 geladen und vor der Installation über seine SHA-256-Prüfsumme validiert.
+
+## Windows
+
+1. Die aktuelle `.msi`-Datei unter
+   [ZenPost Studio Releases](https://github.com/THEORIGINALBITTER/zenpost-studio/releases/latest)
+   herunterladen.
+2. Die MSI-Datei doppelklicken.
+3. Den Anweisungen des Windows-Installers folgen.
+
+Homebrew wird unter Windows nicht benötigt.
+
+## Linux
+
+Die aktuelle `.AppImage`-Datei unter
+[ZenPost Studio Releases](https://github.com/THEORIGINALBITTER/zenpost-studio/releases/latest)
+herunterladen. Danach die Datei ausführbar machen und starten:
+
+```bash
+chmod +x "ZenPost Studio_"*.AppImage
+./"ZenPost Studio_"*.AppImage
+```
+
+Das AppImage benötigt keine systemweite Installation. Es kann beispielsweise
+unter `~/Applications` abgelegt werden.
