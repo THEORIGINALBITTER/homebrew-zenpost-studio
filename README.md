@@ -1,5 +1,7 @@
 # ZenPost Studio – Homebrew Tap
 
+[![Validate Homebrew Tap](https://github.com/THEORIGINALBITTER/homebrew-zenpost-studio/actions/workflows/validate.yml/badge.svg)](https://github.com/THEORIGINALBITTER/homebrew-zenpost-studio/actions/workflows/validate.yml)
+
 Dieser Tap installiert ZenPost Studio auf macOS über Homebrew. Der universelle
 Installer unterstützt Apple Silicon und Intel-Macs.
 

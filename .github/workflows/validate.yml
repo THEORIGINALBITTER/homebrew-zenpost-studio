@@ -1,0 +1,28 @@
+name: Validate Homebrew Tap
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout tap
+        uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check Ruby syntax
+        run: ruby -c Casks/zenpost-studio.rb
+
+      - name: Check tap syntax and style
+        run: brew test-bot --only-tap-syntax
